@@ -37,3 +37,4 @@ userSubmit.addEventListener('click', () => {
     getWeather(userCity.value);
     userCity.value = ``;
 }); 
+
