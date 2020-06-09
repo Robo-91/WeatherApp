@@ -8,18 +8,17 @@ const celsius = document.getElementById(`celsius`);
 
 function convertKelvinToFahrenheit(n) {
     n = (n - 273.15) * 9/5 + 32;
-    return `${Math.ceil(n)}°F`;
+    return `${Math.ceil(n)}F`;
 }
 
 function convertKelvinToCelsius(n) {
     n = n - 273.15;
-    return `${Math.ceil(n)}°C`;
+    return `${Math.ceil(n)}C`;
 }
 
 async function getWeather(city) {
     const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=abba9799275dcadf3f8f7698fcc317e3`, { mods: `cors` });
     const weatherData = await response.json();
-    console.log(weatherData);
 
     if(weatherData.message === "city not found" || weatherData.message === "Nothing to geocode") {
         alert('Please Enter a Valid City!');
