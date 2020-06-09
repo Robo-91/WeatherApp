@@ -9,8 +9,8 @@ h1 {
 #container {
     text-align: center;
     border: 1px solid #5c5b5c;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     border-radius: 8px;
     margin: auto;
     width: 700px;
@@ -29,14 +29,57 @@ h1 {
     display: block;
     margin: auto;
     margin-top: 20px;
+    width: 14em;
+    height: 2.3em;
+    border-radius: 10px;
+    border: 2px solid #80e5ff;
+    background-color: white;
+    color: #80e5ff;
+    font-size: 16px;
+}
+
+#user-submit:hover {
+	border: 2px solid white;
+	color: white;
+	background-color: #80e5ff;
+	transition: 0.7s;
 }
 
 #user-city {
 	display: block;
 	margin: auto;
 	margin-top: 30px;
+	width: 22em;
+	height: 2.5em;
+	border-radius: 10px;
+	border: .5px solid rgba(0,0,0,0.6);
+	text-align: center;
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 18px;
 }
 
 #weather-icon {
 	margin: 1em auto 1em auto;
+	
+}
+
+#city {
+	font-size: 28px;
+	align-self: center;
+}
+
+#celsius {
+	font-size: 40px;
+	align-self: center;
+	background-color: red;
+	border-radius: 100%;
+	padding: 15px;
+}
+
+#fahrenheit {
+	font-size: 40px;
+	align-self: center;
+	background-color: red;
+	border-radius: 100%;
+	padding: 15px;
 }
