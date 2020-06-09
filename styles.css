@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+#container {
+    text-align: center;
+
+}
+
+#weather-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#user-submit {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
