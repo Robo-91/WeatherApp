@@ -7,12 +7,11 @@ h1 {
 }
 
 #container {
+	background-color: lightseagreen;
     text-align: center;
-    border: 1px solid #5c5b5c;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 45px 0 45px 0;
     border-radius: 8px;
-    margin: auto;
+    margin: 15% auto 0 auto;
     width: 700px;
     -webkit-box-shadow: 0px 2px 36px -2px rgba(0,0,0,0.6);
 	-moz-box-shadow: 0px 2px 36px -2px rgba(0,0,0,0.6);
@@ -32,16 +31,21 @@ h1 {
     width: 14em;
     height: 2.3em;
     border-radius: 10px;
-    border: 2px solid #80e5ff;
+    border: 2px solid lightseagreen;
     background-color: white;
-    color: #80e5ff;
+    color: lightseagreen;
     font-size: 16px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#user-submit:focus {
+	outline: none;
 }
 
 #user-submit:hover {
 	border: 2px solid white;
 	color: white;
-	background-color: #80e5ff;
+	background-color: lightseagreen;
 	transition: 0.7s;
 }
 
@@ -52,26 +56,29 @@ h1 {
 	width: 22em;
 	height: 2.5em;
 	border-radius: 10px;
-	border: .5px solid rgba(0,0,0,0.6);
+	border: 2px solid lightseagreen;
 	text-align: center;
 	font-family: 'Balsamiq Sans', cursive;
 	font-size: 18px;
 }
 
+#user-city:hover {
+	outline: none;
+}
+
 #weather-icon {
-	margin: 1em auto 1em auto;
-	
+	font-size: 40px;
 }
 
 #city {
-	font-size: 28px;
+	font-size: 45px;
 	align-self: center;
 }
 
 #celsius {
 	font-size: 40px;
 	align-self: center;
-	background-color: red;
+	background-color: #db5858;
 	border-radius: 100%;
 	padding: 15px;
 }
@@ -79,7 +86,7 @@ h1 {
 #fahrenheit {
 	font-size: 40px;
 	align-self: center;
-	background-color: red;
+	background-color: #db5858;
 	border-radius: 100%;
 	padding: 15px;
 }
