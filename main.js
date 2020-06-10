@@ -18,7 +18,7 @@ function convertKelvinToCelsius(n) {
 
 async function getWeather(city) {
 
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=abba9799275dcadf3f8f7698fcc317e3`, { mods: `cors` });
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=abba9799275dcadf3f8f7698fcc317e3`, { mods: `cors` });
     const weatherData = await response.json();
 
     if(weatherData.message === "city not found" || weatherData.message === "Nothing to geocode") {
