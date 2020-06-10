@@ -17,6 +17,7 @@ function convertKelvinToCelsius(n) {
 }
 
 async function getWeather(city) {
+
     const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=abba9799275dcadf3f8f7698fcc317e3`, { mods: `cors` });
     const weatherData = await response.json();
 
@@ -25,10 +26,43 @@ async function getWeather(city) {
         return null;
     }
 
-    currentWeather.textContent = weatherData.weather[0].main;
+    const weatherDesc = weatherData.weather[0].description;
+    currentWeather.textContent = weatherDesc;
     cityName.textContent = weatherData.name;
     fahrenheit.textContent = convertKelvinToFahrenheit(weatherData.main.temp);
     celsius.textContent = convertKelvinToCelsius(weatherData.main.temp);
+
+    switch(weatherDesc) {
+        case 'clear sky' :
+            weatherIcon.innerHTML = `<i class="fas fa-sun"></i>`;
+            break;
+        case 'few clouds' :
+            weatherIcon.innerHTML = `<i class="fas fa-cloud-sun"></i>`;
+            break;
+        case 'scattered clouds' :
+            weatherIcon.innerHTML = `<i class="fas fa-cloud"></i>`;
+            break;
+        case 'broken clouds' :
+            weatherIcon.innerHTML = `<i class="fas fa-cloud-meatball"></i>`;
+            break;
+        case 'shower rain' :
+            weatherIcon.innerHTML = `<i class="fas fa-cloud-showers-heavy"></i>`;
+            break;
+        case 'rain' :
+            weatherIcon.innerHTML = `<i class="fas fa-cloud-rain"></i>`;
+            break;
+        case 'thunderstorm' :
+            weatherIcon.innerHTML = `<i class="fas fa-bolt"></i>`;
+            break;
+        case 'snow' :
+            weatherIcon.innerHTML = `<i class="fas fa-snowflake"></i>`;
+            break;
+        case 'mist' :
+            weatherIcon.innerHTML = `<i class="fas fa-smog"></i>`;
+            break;
+    }
+
+
 }
 
 getWeather('houston');
