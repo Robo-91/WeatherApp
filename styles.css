@@ -1,3 +1,8 @@
+html {
+	width: max-content;
+	margin: auto;
+}
+
 body {
 	font-family: 'Balsamiq Sans', cursive;
 	background-image: url('https://images.unsplash.com/photo-1530908295418-a12e326966ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80');
@@ -5,7 +10,6 @@ body {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	width: 1000px;
 }
 
 h1 {
@@ -15,10 +19,10 @@ h1 {
 #container {
 	background-color: lightseagreen;
     text-align: center;
-    padding: 45px 0 45px 0;
+    padding: 5em 0 5em 0;
     border-radius: 8px;
-    margin: 15% auto 0 auto;
-    width: 700px;
+    margin: auto;
+    width: 50em;
     -webkit-box-shadow: 0px 2px 36px -2px rgba(0,0,0,0.6);
 	-moz-box-shadow: 0px 2px 36px -2px rgba(0,0,0,0.6);
 	box-shadow: 0px 2px 36px -2px rgba(0,0,0,0.6);
@@ -40,7 +44,7 @@ h1 {
     border: 2px solid lightseagreen;
     background-color: white;
     color: lightseagreen;
-    font-size: 16px;
+    font-size: 1em;
     font-family: 'Balsamiq Sans', cursive;
 }
 
@@ -65,7 +69,7 @@ h1 {
 	border: 2px solid lightseagreen;
 	text-align: center;
 	font-family: 'Balsamiq Sans', cursive;
-	font-size: 18px;
+	font-size: 1.5em;
 }
 
 #user-city:hover {
@@ -73,16 +77,16 @@ h1 {
 }
 
 #weather-icon {
-	font-size: 40px;
+	font-size: 3em;
 }
 
 #city {
-	font-size: 45px;
+	font-size: 3em;
 	align-self: center;
 }
 
 #celsius {
-	font-size: 40px;
+	font-size: 3em;
 	align-self: center;
 	background-color: #db5858;
 	border-radius: 100%;
@@ -90,9 +94,38 @@ h1 {
 }
 
 #fahrenheit {
-	font-size: 40px;
+	font-size: 3em;
 	align-self: center;
 	background-color: #db5858;
 	border-radius: 100%;
 	padding: 15px;
+}
+
+@media (max-width: 800px) {
+	#container {
+		width: 25em;
+		padding: 2em 0 2em 0;
+	}
+	#weather-icon {
+		font-size: 1em;
+	}
+	#fahrenheit {
+		font-size: 1em;
+	}
+	#celsius {
+		font-size: 1em;
+	}
+	#city {
+		font-size: 1em;
+	}
+	#user-city {
+		width: 11em;
+		height: 1em;
+	}
+	#user-submit {
+		width: 7em;
+		height: 2em;
+		font-size: .5em;
+	}
+
 }
