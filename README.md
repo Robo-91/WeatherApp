@@ -4,7 +4,7 @@
 
 This Project was created for learning purposes only, and is part of The Odin Project Curriculum.
 
-The purpose for implementing this webpage was to learn how to access and extract information from an API using asynchronous javascript. The API that I used is provided by openweathermap.org.
+The purpose for implementing this webpage was to learn how to access and extract information from an API using asynchronous features available in javascript. The API that is used is provided by openweathermap.org.
 
 ## Technologies Used
 
@@ -18,6 +18,7 @@ List of features ready and TODOs for future development
 * Uses Async/Await to get information provided by an API.
 * Use of Flexbox for the layout displaying weather information.
 * Use of Media Queries to make the page the page responsive.
+* Uses icons provided by font awesome cdn.
 
 To-do list:
 * Work with Media Queries further to improve page layout.
