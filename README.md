@@ -16,12 +16,12 @@ The purpose for implementing this webpage was to learn how to access and extract
 
 List of features ready and TODOs for future development
 * Uses Async/Await to get information provided by an API.
-* Awesome feature 2
-* Awesome feature 3
+* Use of Flexbox for the layout displaying weather information.
+* Use of Media Queries to make the page the page responsive.
 
 To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
+* Work with Media Queries further to improve page layout.
+* Implement a better page design.
 
 ## Getting Started
    
