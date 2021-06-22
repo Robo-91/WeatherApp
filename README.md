@@ -26,14 +26,12 @@ To-do list:
 
 ## Getting Started
    
-(include git clone command)
-(include all environment setup steps)
+Ensure that you have a Text Editor installed (Visual Studio Code, Sublime Text Editor, etc).
+If you're using windows, make sure you have git bash installed.
 
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
+Using the terminal/command prompt, navigate to the directory that you want to clone the repository in, and enter the following command:
 
-- All the `code` required to get started
-- Images of what it should look like
+> git clone https://github.com/Robo-91/WeatherApp.git
 
 ## Usage
 
